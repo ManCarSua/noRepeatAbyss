@@ -1,0 +1,238 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #3b1245;
+  color: #cad4ff;
+}
+
+h1 {
+  text-align: center;
+}
+
+.grid-container {
+  margin: auto;
+  align-items: center;
+}
+
+.character-grid {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  grid-gap: 3px;
+}
+
+.character-card {
+  max-width: 100px;
+  width: 100px;
+  background-color: #0e0e0e;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: none;
+  padding: 3px;
+  margin: 2px;
+  border: solid 1px black;
+}
+
+.character-image {
+  width: 100%;
+  border-radius: 8px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.rarity-5 {
+  background: linear-gradient(to bottom, rgb(255, 157, 0), rgb(138, 102, 2));
+}
+
+.rarity-4 {
+  background: linear-gradient(to bottom, rgb(155, 39, 194), rgb(83, 16, 72));
+}
+
+.character-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: transparent;
+  width: 60%;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0px;
+  padding: 5px 2px;
+}
+
+.team-select {
+  width: 80%;
+  margin: auto;
+}
+
+.abyss-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(40%, 1fr));
+  margin: auto;
+  justify-items: center;
+}
+
+.floor-section {
+  width: 450px;
+  padding: 10px;
+}
+
+.selection-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  align-items: center;
+  grid-gap: 3px;
+}
+
+.selection-card {
+  width: 100px;
+  background-color: #0e0e0e;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: none;
+  padding: 3px;
+  margin: 2px;
+}
+
+.character-card:hover {
+  opacity: 0.8;
+  background: #65ff5d;
+  color: black;
+  border: solid 1px black;
+}
+
+.no-image {
+  width: 100%;
+  background: linear-gradient(to bottom, #848484, #353535);
+  border-radius: 8px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.element-image {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 25%;
+}
+
+.weapon-image {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  width: 25%;
+}
+
+.selected {
+  opacity: 0.8;
+  background: #c6c6c6;
+  color: #101010;
+}
+
+.button-container {
+  text-align: center;
+  padding: 5px;
+}
+
+#delete-button {
+  font-weight: bold;
+  background-color: #cad4ff;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+#delete-button:hover {
+  opacity: 0.5;
+}
+
+@media (min-width: 1024px) {
+  .character-grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    grid-gap: 6px;
+  }
+
+  .character-card {
+    max-width: 80px;
+    width: 80px;
+    background-color: #0e0e0e;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    color: #cad4ff;
+    padding: 3px;
+    margin: 2px;
+    border: solid 1px black;
+  }
+  .selected {
+    opacity: 0.8;
+    background: #c6c6c6;
+    color: #101010;
+  }
+  .character-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: transparent;
+    width: 60%;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin: 0px;
+    padding: 5px 2px;
+  }
+
+  .floor-section {
+    width: 370px;
+  }
+
+  .selection-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, minmax(80px, 1fr));
+    align-items: center;
+    grid-gap: 3px;
+  }
+
+  .selection-card {
+    width: 80px;
+    background-color: #0e0e0e;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    padding: 3px;
+    margin: 2px;
+  }
+
+  .no-image {
+    width: 100%;
+    background: linear-gradient(to bottom, #848484, #353535);
+    border-radius: 8px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+}
